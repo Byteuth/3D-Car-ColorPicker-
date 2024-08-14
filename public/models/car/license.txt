@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Car, vehicle, offroad SUV, game ready.
+* source:	https://sketchfab.com/3d-models/low-poly-car-vehicle-offroad-suv-game-ready-d049f35579d748ddab58b1e9447573aa
+* author:	gbarzu (https://sketchfab.com/gbarzu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Car, vehicle, offroad SUV, game ready." (https://sketchfab.com/3d-models/low-poly-car-vehicle-offroad-suv-game-ready-d049f35579d748ddab58b1e9447573aa) by gbarzu (https://sketchfab.com/gbarzu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

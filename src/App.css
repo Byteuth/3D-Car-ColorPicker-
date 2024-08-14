@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Rubik", sans-serif;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.configurator {
+	position: fixed;
+	right: 10vh;
+	bottom: 30vh;
+	width: 320px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 16px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.configurator-section-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+.configurator-section-values {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.item:hover {
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+.item-dot {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: solid 2px transparent;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease;
+}
+
+.item-active .item-dot {
+	border: solid 1px rgb(255, 255, 255);
+}
+
+.item-label {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	color: #bbb;
+	transition: color 0.3s ease;
+}
+.item.item-active .item-label {
+	color: white;
+}
