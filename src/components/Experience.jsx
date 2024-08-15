@@ -6,11 +6,26 @@ import {
 } from "@react-three/drei";
 
 import { Car } from "./Car";
+import { useEffect, useState } from "react";
 
 export const Experience = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => setIsMobile(window.innerWidth <= 768);
+		handleResize();
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	const presentationSpeed = isMobile ? 20: 1.5;
+
+
 	return (
-		<PresentationControls
-			speed={1.5}
+
+	<>
+	<PresentationControls
+			speed={presentationSpeed}
 			global={true}
 			polar={[-0.4, Math.PI / 4]}
 			rotation={[Math.PI / 8, Math.PI / 8, 0]}
@@ -41,5 +56,7 @@ export const Experience = () => {
 				/>
 			</mesh>
 		</PresentationControls>
+	</>
+		
 	);
 };
