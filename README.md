@@ -3,6 +3,9 @@
 3D application built with React, React Three Fiber, and Three.js. 
 It allows users to interact with a low-poly truck model by changing its color and viewing it from different angles using mouse controls.
 
+
+**DEMO** -> https://byteuth-car-color-picker.netlify.app/
+
 ## Screenshots
 <div>
   <img src="https://github.com/user-attachments/assets/73c45970-eff6-4c8c-916c-1b8bfda79b80" alt="Screenshot 3" style="width: 28%; display: inline-block;">
