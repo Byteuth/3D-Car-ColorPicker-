@@ -13,14 +13,16 @@ export const Configurator = () => {
 	}, []);
 
 	return (
-		<div className={`configurator ${isMobile ? "mobile" : ""}`}>
-			{isMobile && (
-				<div className="mobile-recommendation">
-					Recommended on Web for better experience
-				</div>
-			)}
+		<>
+			<div className={`configurator ${isMobile ? "mobile" : ""}`}>
+				{isMobile && (
+					<div className="text-recommendation">
+						Recommended on Web for better experience
+					</div>
+				)}
+			</div>
+			<div className={`configurator ${isMobile ? "mobile" : ""}`}>
 			<div className="configurator-section">
-				<div className="configurator-section-title">Body Color</div>
 				<div className="configurator-section-values">
 					{paintColors.map((item, index) => (
 						<div
@@ -39,6 +41,7 @@ export const Configurator = () => {
 					))}
 				</div>
 			</div>
-		</div>
+			</div>
+		</>
 	);
 };
