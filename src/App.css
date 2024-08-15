@@ -22,9 +22,10 @@ body,
 
 .configurator {
 	position: fixed;
-	right: 10vh;
-	bottom: 30vh;
-	width: 320px;
+	right: 5vw;
+	bottom: 4vh;
+	width: 80%;
+	max-width: 320px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -32,6 +33,7 @@ body,
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease;
 }
 
 .configurator-section-title {
@@ -46,7 +48,6 @@ body,
 	gap: 16px;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: px;
 }
 
 .item {
@@ -82,6 +83,45 @@ body,
 	color: #bbb;
 	transition: color 0.3s ease;
 }
+
 .item.item-active .item-label {
 	color: white;
+}
+
+@media (max-width: 768px) {
+	.configurator {
+		right: 5vw;
+		bottom: 5vh;
+		width: 90%;
+		max-width: none;
+		padding: 15px;
+	}
+
+	.item-dot {
+		width: 40px;
+		height: 40px;
+	}
+
+	.item-label {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.configurator {
+		bottom: 2vh;
+		width: 86%;
+		padding: 10px;
+		border-radius: 12px;
+	}
+
+	.item-dot {
+		width: 30px;
+		height: 30px;
+		margin: 5px;
+	}
+
+	.item-label {
+		font-size: 9px;
+	}
 }

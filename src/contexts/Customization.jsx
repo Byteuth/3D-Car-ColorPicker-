@@ -24,10 +24,6 @@ export const paintColors = [
 		name: "Forest Green",
 	},
 	{
-		color: "#4682B4", 
-		name: "Steel Blue",
-	},
-	{
 		color: "#9370DB", 
 		name: "Purple",
 	},
@@ -36,8 +32,8 @@ export const paintColors = [
 		name: "Orange",
 	},
 	{
-		color: "#FF4500",  
-		name: "Orange Red",
+		color: "#F21324",  
+		name: "Red",
 	},
 	{
 		color: "#00CED1",
